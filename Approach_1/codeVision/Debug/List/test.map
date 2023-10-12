@@ -1,0 +1,36 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+str                                                                               0x026A      20
+rx_buffer                                                                         0x027E       8
+tx_buffer                                                                         0x0286       8
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+data                                                                              R5           1
+rx_wr_index                                                                       R4           1
+rx_rd_index                                                                       R7           1
+rx_counter                                                                        R6           1
+rx_buffer_overflow                                                                R2.0      1bit
+tx_wr_index                                                                       R9           1
+tx_rd_index                                                                       R8           1
+tx_counter                                                                        R11          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+usart_rx_isr                                                                      0x00092     29
+usart_tx_isr                                                                      0x000AF     23
+putchar                                                                           0x000C6     27
+main                                                                              0x000E1     70
+puts                                                                              0x00127     19
+put_buff_G100                                                                     0x0013A     64
+_print_G100                                                                       0x0017A    308
+sprintf                                                                           0x002AE     52
+strlen                                                                            0x002E2     12
+strlenf                                                                           0x002EE     13
